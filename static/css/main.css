@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+.avatar-home{
+    height: 40px !important;
+    width: 40px !important;
+    border: 1px gray solid;
+    border-radius: 50%;
+}
+.nav-link {
+    font-size: 16px;
+    overflow: hidden;
+  }
+  .nav-link span {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+  .nav-link span:before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .navbar-light .navbar-nav .nav-link:focus,
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #ffc200;
+    font-weight: bold;
+  }
+  .navbar-light .navbar-nav .nav-link:focus span,
+  .navbar-light .navbar-nav .nav-link:hover span {
+    transform: translateY(-100%);
+  }
+  
+
+  
+li{
+    list-style: none;
+}
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+}
+a:hover{
+    text-decoration: underline;
+    color:#f97f00;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+}
+.main-heading {
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.featured-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.1rem;
+    color: #222222;
+}
+.featured-subtitle{
+    font-size: 1rem;
+    color: gray;
+}
+small{
+    font-size: 0.8rem;
+    color: #454545;
+}
+#section-title{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    color: #444444;
+  
+}
+
+.banner-wrapper{
+    margin-top:2rem;
+    width: 100%;
+}
+.banner-wrapper img{
+    width:100%;
+    height: 17rem;
+}
+
+
+
+/* ************************ Navigation ******************************* */
+#login-btn{
+    background-color: #ffb639;
+    color: rgb(39, 39, 39);
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+    min-width: 100px;
+    text-decoration: none;
+}
+#login-btn:hover{
+    background-color: #ffae57;
+}
+
+/* ********************************* Tournaments ****************************** */
+.tournament-title {
+    color: rgb(34, 34, 34);
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+#tournament-details li {
+    list-style: none;
+    color: gray;
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+#tournament-details li span {
+    margin-left: 0.3rem;
+}
+#tournaments-cta{
+    border-radius: 25px;
+    width: 80%;
+    text-decoration: none;
+}
+
+/* ************************************************************************************* */
+#article-thumbnail{
+    height: 200px;
+}
+#article-title{
+    font-size: 1.3rem;
+    color: #222222;
+}
+#article-subtitle{
+    font-size: 1rem;
+    color: #505050;
+}
+
+.all-articles-cta{
+    background-color: #ff9422;
+    text-decoration: none !important;
+    color: rgb(30, 30, 30) !important;
+}
+
+.all-articles-cta:hover{
+    background-color: #ffa13c;
+    
+}
+
+/* ************************************ Media Query ********************************* */
+
+@media screen and (max-width:550px){
+    #tourny-img{
+        width:80px !important;
+        height: 60px !important;
+    }
+    .blog-title{
+        font-size: 1.1rem;
+    }
+    .intro-text{
+        font-size: 1.1rem;
+        width:99% !important;
+    }
+    .article-card{
+        height: 100% !important;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .hero-text img{
+        height: 50px !important;
+    }
+    .hero-text h1{
+        font-size: 3.4rem !important;
+    }
+    .sitetitle{
+        font-size: 1.3rem;
+        letter-spacing: 0.5rem !important;
+    }
+    
+}
+
